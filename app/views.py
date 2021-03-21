@@ -232,13 +232,19 @@ def checkout(request):
 @login_required
 def payment_done(request):
     user=request.user
-    custid=request.GET.get('custid')
-    customer=Customer.objects.get(id=custid)
-    cart=Cart.objects.filter(user=user)
-    for c in cart:
-        OrderPlaced(user=user,customer=customer,product=c.product,quantity=c.quantity).save()
-        c.delete()
-    return redirect('orders')
+    
+    if Customer.user is not None:
+        custid=request.GET.get('custid')
+        customer=Customer.objects.get(id=custid)
+        cart=Cart.objects.filter(user=user)
+        for c in cart:
+            OrderPlaced(user=user,customer=customer,product=c.product,quantity=c.quantity).save()
+            c.delete()
+        return redirect('orders')
+    else:
+        add=Customer.objects.filter(user=request.user)
+        totalitem=len(Cart.objects.filter(user=request.user))
+        return render(request, 'app/address.html',{'add':add,'active':'btn-primary','totalitem':totalitem})
 
 
 @method_decorator(login_required,name='dispatch')
