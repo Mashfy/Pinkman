@@ -128,8 +128,9 @@ def orders(request):
     totalitem=len(Cart.objects.filter(user=request.user))
     return render(request, 'app/orders.html',{'order_placed':op,'totalitem':totalitem})
 
-@login_required
+
 def mobile(request,data=None):
+    totalitem=0
     if data==None:
         mobiles=Product.objects.filter(category='M')
     elif data=='Apple' or data=='Samsung' or data=='Asus':
@@ -143,6 +144,7 @@ def mobile(request,data=None):
     return render(request, 'app/mobile.html',{'mobiles':mobiles,'totalitem':totalitem})
 
 def laptop(request,data=None):
+    totalitem=0
     if data==None:
         laptops=Product.objects.filter(category='L')
     elif data=='Asus' or data=='Razer'or data=='Apple':
