@@ -290,7 +290,7 @@ class ProfileViewadd(View):
             reg.save()
             messages.success(request,'Congratulations!! Profile Updated Successfully')
             totalitem=len(Cart.objects.filter(user=request.user))
-        return redirect('showcart')
+        return redirect('checkout')
 
 
 def search(request):
