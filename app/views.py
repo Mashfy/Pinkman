@@ -241,7 +241,7 @@ def payment_done(request):
     try:
         customer=Customer.objects.get(id=custid)
     except Exception as e:
-        return redirect('profile')
+        return redirect('profileadd')
     cart=Cart.objects.filter(user=user)
     for c in cart:
         OrderPlaced(user=user,customer=customer,product=c.product,quantity=c.quantity).save()
@@ -269,6 +269,28 @@ class ProfileView(View):
             messages.success(request,'Congratulations!! Profile Updated Successfully')
             totalitem=len(Cart.objects.filter(user=request.user))
         return render(request,'app/profile.html',{'form':form,'active':'btn-primary','totalitem':totalitem})
+
+@method_decorator(login_required,name='dispatch')
+class ProfileViewadd(View):
+    def get(self,request):
+        form=CustomerProfileForm()
+        totalitem=len(Cart.objects.filter(user=request.user))
+        return render(request,'app/profile.html',{'form':form,'active':'btn-primary','totalitem':totalitem})
+    
+    def post(self,request):
+        form=CustomerProfileForm(request.POST)
+        if form.is_valid():
+            usr=request.user
+            name=form.cleaned_data['name']
+            address=form.cleaned_data['address']
+            area=form.cleaned_data['area']
+            district=form.cleaned_data['district']
+            mobno=form.cleaned_data['mobno']
+            reg=Customer(user=usr,name=name,address=address,area=area,district=district,mobno=mobno)
+            reg.save()
+            messages.success(request,'Congratulations!! Profile Updated Successfully')
+            totalitem=len(Cart.objects.filter(user=request.user))
+        return redirect('showcart')
 
 
 def search(request):

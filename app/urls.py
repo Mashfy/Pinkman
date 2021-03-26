@@ -20,6 +20,7 @@ urlpatterns = [
 
     #path('buy/', views.buy_now, name='buy-now'),
     path('address/', views.ProfileView.as_view(), name='profile'),
+    path('addressadd/', views.ProfileViewadd.as_view(), name='profileadd'),
     path('profile/', views.address, name='address'),
     path('orders/', views.orders, name='orders'),
     
