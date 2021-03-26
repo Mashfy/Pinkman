@@ -242,7 +242,6 @@ def payment_done(request):
         customer=Customer.objects.get(id=custid)
     except Exception as e:
         return redirect('profile')
-        return redirect('orders')
     cart=Cart.objects.filter(user=user)
     for c in cart:
         OrderPlaced(user=user,customer=customer,product=c.product,quantity=c.quantity).save()
