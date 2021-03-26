@@ -17,6 +17,8 @@ class ProductView(View):
         mobiles=Product.objects.filter(category='M')
         laptops=Product.objects.filter(category='L')
         watches=Product.objects.filter(category='W')
+        if request.user.is_authenticated:
+            totalitem=len(Cart.objects.filter(user=request.user))
         return render(request,'app/home.html',{'topwears':topwears,'bottomwears':bottomwears,'mobiles':mobiles,'laptops':laptops,'watches':watches,'totalitem':totalitem})
 
 class ProductDeatilView(View):
@@ -235,7 +237,12 @@ def checkout(request):
 def payment_done(request):
     user=request.user
     custid=request.GET.get('custid')
-    customer=Customer.objects.get(id=custid)
+    customer = None
+    try:
+        customer=Customer.objects.get(id=custid)
+    except Exception as e:
+        return redirect('profile')
+        return redirect('orders')
     cart=Cart.objects.filter(user=user)
     for c in cart:
         OrderPlaced(user=user,customer=customer,product=c.product,quantity=c.quantity).save()
