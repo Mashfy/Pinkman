@@ -20,3 +20,7 @@ Now install requirements.txt
 ```
 requirements.txt
 ```
+Now run the server
+```
+python manage.py runserver
+```
