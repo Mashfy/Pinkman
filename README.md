@@ -10,15 +10,15 @@ pip install virtualenv
 ```
 Create your own environment
 ```
-virtualenv yourenv
+virtualenv yourenvname
 ```
 Activate your environemnt
 ```
-yourenv\Scripts\activate
+yourenvname\Scripts\activate
 ```
 Now install requirements.txt
 ```
-requirements.txt
+pip install -r requirements.txt
 ```
 Now run the server
 ```
