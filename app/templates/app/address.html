@@ -5,11 +5,11 @@
 <div class="container my-5">
  <div class="row">
  <h3>Welcome <span class="text-capitalize">{{request.user}}</span></h3>
- <h5 style="text-align: center;">If you are a new user, first add Profiles in Address Form.</h5>
+ <h5 style="text-align: center;">Add Addresses in <a href="{% url 'profile' %}" style="text-decoration:none;">Profile Form</a>.</h5>
   <div class="col-sm-2 border-end">
    <ul class="list-unstyled">
-    <li class="d-grid"><a href="{% url 'address' %}" class="btn {{active}}">Profiles</a></li>
-    <li class="d-grid"><a href="{% url 'profile' %}" class="btn">Address Form</a></li>
+    <li class="d-grid"><a href="{% url 'address' %}" class="btn {{active}}">Address</a></li>
+    <li class="d-grid"><a href="{% url 'profile' %}" class="btn">Profile Form</a></li>
     
    </ul>
   </div>
