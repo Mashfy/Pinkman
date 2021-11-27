@@ -20,7 +20,11 @@ Now install requirements.txt
 ```
 pip install -r requirements.txt
 ```
-Now run the server
+
+There is two database portion in this website, if you want to use the sqlite, which is easier then uncomment the Database setting portion of sqlite in settings.py and comment out the mysql portion.<br>
+If you want to use mysql database, you have to locally create the database named ecom in your local machine, then migrate the model in it. Get help from [here](https://studygyaan.com/django/how-to-use-mysql-database-with-django-project).
+
+Then run the server
 ```
 python manage.py runserver
 ```
