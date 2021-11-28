@@ -14,7 +14,7 @@ $('#slider1, #slider2, #slider3, #slider4, #slider5').owlCarousel({
             autoplay: true,
         },
         1000: {
-            items: 5,
+            items: 4,
             nav: true,
             loop: true,
             autoplay: true,

@@ -1,0 +1,139 @@
+id,title,selling_price,discounted_price,description,brand,category,product_image
+1,Iphone 12 pro,160000.0,150000.0,"Apple iPhone 12 Pro Max comes with a 6.7 inches Super Retina XDR OLED screen which is one of its main specialties. It has a classical Apple iPhone notch design. The back camera is of quad 12+12+12 MP + TOF 3D with powerful image processing capability and Ultra HD 4K video recording. The front one is of Dual 12 MP and SL 3D camera. Apple iPhone 12 Pro Max comes with Li-ion battery with 18W fast charging solution. It has 6 GB RAM, Hexa-core CPU and Apple GPU. It is powered by a 5 nm Apple A14 Bionic chipset. The device comes with 128, 256 or 512 GB internal storage.",Apple,M,productimg/Iphone_12_pro.jpg
+2,Asus rog phone 3,110000.0,100000.0,"Asus ROG Phone 3 comes with 6.59 inches Full HD+ AMOLED screen. It has a Full-View Gaming Phone design. The back camera is of triple 64+13+5 MP with PDAF, LED flash, ultrawide, macro etc. and 8K video recording option. The front camera is of 24 Megapixel. Asus ROG Phone 3 comes with 6000 mAh huge battery with 30W fast charging and 10W power bank or reverse charging facility. It has 8, 12 or 16 GB RAM, up to 3.1 GHz octa-core CPU and Adreno 650 GPU. It is powered by Qualcomm Snapdragon 865+ (7 nm+) chipset. The device comes with 128, 256 or 512 GB internal storage and no MicroSD slot. There is an optical in-display fingerprint sensor in this phone.",Asus,M,productimg/Asus_rog_phone_3.jpg
+3,Oneplus 8t,72000.0,68000.0,"8T has an internal memory of 128/256 GB, which can keep a lot of files and data of the user. There is no expandable memory slot that can keep up with the help of a memory card. This stylish device has a 48 MP, 16 MP, 5 MP, 2 MP camera in the back, and a 32 MP camera on the front side. It was powered by a standard 4500 mAh Li-polymer battery.",Oneplus,M,productimg/Oneplus_8t.jpg
+4,Samsung Galaxy S20 Ultra,130000.0,125000.0,"Samsung Galaxy S20 Ultra comes with 6.9 inches Quad HD+ Dynamic AMOLED 2X screen. It has a punch-hole front camera design. The back camera is of quad 108+48+12+0.3 MP with PDAF, OIS, periscope, 10x hybrid optical zoom, telephoto, ultrawide etc. and up to 8K video recording. The front camera is of 40 Megapixel. Galaxy S20 Ultra comes with 5000 mAh battery with 45W fast charging. It has 12/16 GB RAM, up to 2.73 GHz octa-core CPU and Mali-G77 MP11 GPU. It is powered by a 7 nm+ Exynos 990 chipset. The device comes with 128/256/512 GB UFS 3.0 internal storage and shared MicroSD slot. There is an ultrasonic in-display fingerprint sensor in this phone.",Samsung,M,productimg/Samsung_Galaxy_S20_Ultra.jpg
+5,Mi note 10 ultra,65000.0,60000.0,"Xiaomi Mi 10 Ultra comes with 6.67 inches Full HD+ OLED screen. It has a punch-hole front camera design. The front side is protected by a 5th generation Gorilla Glass and the backside has a 6th gen. Gorilla Glass. The back camera is of quad 48+48+12+20 MP with dual-pixel PDAF, dual-LED flash, laser autofocus, 5x optical zoom, 120x hybrid zoom, 120mm periscope telephoto, OIS, 128º ultrawide etc. and up to 8K video recording option. The front camera is of 20 MP. Mi 10 Ultra comes with 4500 mAh battery with 120W fast charging and 50W Wireless Charging. It has 8, 12 or 16 GB RAM, up to 2.84 GHz octa-core CPU and Adreno 650 GPU. It is powered by a Qualcomm Snapdragon 865 (7 nm+) chipset. The device comes in 128, 256 or 512 GB UFS 3.1 internal storage and no Memory Card slot. There is an in-display fingerprint sensor in this phone.",MI,M,productimg/Mi_note_10_ultra.jpg
+6,Nubia Red Magic 5G,60000.0,54000.0,"ZTE Nubia Red Magic 5G comes with 6.65 inches Full HD+ AMOLED screen. It has a full-view gaming phone design. The front side is protected by a Gorilla Glass. The back camera is of Triple 64+8+2 MP with PDAF, ultrawide, dedicated macro camera, HDR etc. and up to 8K video recording option. The front camera is of 8 MP. ZTE Nubia Red Magic 5G comes with 4500 mAh battery with 55W fast charging (56% in 15 minutes, 100% in 40 minutes). It has 8, 12 or 16 GB RAM, up to 2.84 GHz octa-core CPU and Adreno 650 GPU. It is powered by Qualcomm Snapdragon 865 (7 nm+) chipset. The device comes with 128 or 256 GB UFS 3.0 internal storage and no MicroSD slot. There is an optical in-display fingerprint sensor in this phone.",ZTE,M,productimg/Nubia_Red_Magic_5G.jpg
+7,Nokia 1100,900.0,500.0,"Nokia 1100 classic mobile phone has 4 lines 96 x 65 pixels display, predictive text input, calculator, stopwatch, picture messaging.",Nokia,M,productimg/Nokia_1100.jpg
+8,LEVI'S Denim Jeans,2000.0,1500.0,"Levi's 514 jeans are a universally straight fit and definitive denim jeans coming in a dark blue colour. With a standard, straight legged fit and trademark red tab label they are made to last and only improve with wear and age. Additional features include:
+
+16.5” hem
+Zip fly
+Straight leg
+Regular fit
+99% Cotton 1% Elastane
+Machine washable",Levi's,BW,productimg/Levis.jpg
+9,Men's Alabama Rooted Denim,2200.0,1900.0,"Wrangler 88MWRTN Men's Alabama Rooted Denim Pants are made with 100% sustainable cotton denim from Alabama. They feature custom shanks and rivets, and the farmer's story on the inner pocket. They sit below the waist, are slim through the seat, thigh, and knee and have a sleek, straight leg that fits over boots. These durable, comfortable jeans come with all the classic features you know and expect, including the signature five-pocket styling, Wrangler Alabama brand patch on the back pocket, and classic 'W' stitching.
+
+Pants are made of 100% Alabama grown cotton denim
+Classic 5-pocket style
+Men's low-rise denim pants sit below the waist, and are slim through the seat, thigh, and knee
+Straight leg opening fits over boots
+Wrangler brand patch on back pocket and with classic 'W' stitching
+Riveted, reinforced back pockets
+Machine washable",Wrangler,BW,productimg/Wrangler.jfif
+10,Jeans Thommer Slim Skinny Jeans,4000.0,3400.0,"Enhance your wardrobe with the Thommer Slim Skinny Jeans from Diesel Jeans, perfect for casual attire. Constructed with a straight leg design in a tapered fit, these jeans feature a classic 5 pocket design with a washed out look all over, belt loops, a button fly and Diesel Jeans branding throughout for a timeless look.
+
+• Men's Jeans
+• 5 pocket design
+• Straight leg
+• Slim Skinny fit
+• True to size
+• Belt loops
+• Button fly
+• Washed out look
+• Branded back patch
+• Diesel Jeans branding
+• 98% Cotton, 2% Elastane
+• Machine washable at 30 degrees",Diesel,BW,productimg/Diesel.jpg
+11,LEE Luke Slim Tapered Demin Jean Faded Fresh,4800.0,4200.0,"Luke Slim Tapered fit jeans by Lee featuring an vintage design, fitted waistband with leather logo patch to reverse, zip fastening and concealed closure to the front, classic five pocket styling with stud detailing and embroidered design to reverse, slim fit tapered style.
+
+Color: Fresh
+Regular Waist
+Zip Fly
+Embossed leather label
+Two rear patch pockets, one with woven Lee label
+Two hand pockets, one coin pocket
+Branded rivet detailing
+Material: 90.5% cotton, 8% Lyocell, 1.5% elastane",Leejeans,BW,productimg/Lee_Jeans.jfif
+12,CALVIN KLEIN W Mom Jeans,3500.0,3000.0,"Category:	Denim, Denim CALVIN KLEIN JEANS, Navy Denim
+Material:	99 % cotton, 1 % elastane",Calvinklein,BW,productimg/calvin_klein.jpg
+13,Rocco Relaxed Skinny Deep Blue Denim Jeans,4000.0,3999.0,"Renowned for their expert craftsmanship in making jeans, True Religion offer up fresh new styles this season. These Rocco jeans sport a classic five-pocket design with branded rivets at each pocket. The contrasting stitching flows throughout this style keeping the aesthetic contemporary. Subtle branding can be seen at each button fastening and the look comes complete with a True Religion branded leather jacron, fitted at the waistline.
+
+Regular fit
+Rocco Relaxed Skinny fit
+four button fly fastening
+Five pocket design
+Branded rivets throughout
+Contrasting stitching throughout
+Horseshoe stitching at back pockets
+True Religion branded leather jacron at waistline",TrueReligion,BW,productimg/True_religion.jpg
+14,Regular Fit Mens Wear,800.0,600.0,"Composition 96% Cotton, 4% Elastane
+Twill
+Button closing
+Multipockets",Armani,BW,productimg/Armani_Jeans.jpg
+15,The Cotton Crew,799.0,700.0,"An iconic tee with clean lines and a classic crew neck. The fabric is a midweight, durable cotton that gets softer over time.
+Slim fit
+Take your usual size
+Size up if a looser fit is desired",Everlane,TW,productimg/Everlane.jpg
+16,Standard Fine Cord Shirt,8000.0,7200.0,"Standard fine cord shirt. Full button front placket with French seams at sides and sleeves. Button closures at sleeve cuffs. Center back seam with back locker loop at neck. Shirttail hem. This ultra-fine cord shirt is perfect for transitioning into cooler months.
+
+Additional Information:
+
+• 100% Cotton
+• Fabric: KU
+• Imported, fabric from Italy.
+• Length: 30 in.
+• Garment dyed with extra softeners for a soft, lived in feel",JamesPerse,TW,productimg/James_Perse.jpg
+17,Skater Photo Neon T-shirt,3000.0,2500.0,"Calvin Klein T-shirt with large print on the back and logo printed on the front.
+
+Materials: 100% Cotton
+Colour: Ck Black",CalvinKlein,TW,productimg/Calvin_Klein_2jWgm4l.jpg
+18,Signature Short-Sleeve Midweight Jersey,8999.0,7999.0,"Black
+100% Cotton
+Imported
+Machine Wash
+Crew-neck tee featuring Carhartt logo graphic at front and short sleeves",Carhartt,TW,productimg/Carhartt.jpg
+19,Tech Big Logo T Shirt,1200.0,900.0,"Colour: Black (Black)
+100% Polyester",UnderArmour,TW,productimg/Under_Armour.jpg
+20,Prospect Tee,5999.0,4999.0,"A tee so comfortable, you’ll never want to take it off. Made from ultrasoft jersey.",Brooklinen,TW,productimg/Brooklinen.jpg
+21,RHONE Reign,1200.0,1050.0,"Features
+Moisture-wicking, quick-drying nylon and polyester fabric blend has a touch of spandex for stretch
+UPF 50+ sun protection
+GoldFusion antimicrobial treatment inhibits the growth of odor-causing bacteria on fabric",Rhone,TW,productimg/Rhone.jfif
+22,Alienware m17 R3,300000.0,280000.0,Alienware’s thin 17-inch laptop with maximum-performance graphics. Featuring up to 12-phase graphics voltage regulation and reengineered Cryo-Tech cooling.,Dell,L,productimg/Alienware_m17_R3.jpg
+23,MacBook Air,260000.0,230000.0,"CPU: 1.6GHz Intel Core i5-8210Y (dual-core, 4 threads, 4MB cache, up to 3.6GHz)
+Graphics: Intel UHD Graphics 617.
+RAM: 8GB (2,133MHz LPDDR3)
+Screen: 13.3-inch, 2,560 x 1,600 Retina True Tone display (backlit LED, IPS)
+Storage: 256GB PCIe SSD.",Apple,L,productimg/MacBook_Air.jpg
+24,Asus ROG Strix Scar III,205000.0,195000.0,"The Strix Scar III that I tested costs $1,799 and comes with an Intel Core i7-9750H CPU, an Nvidia GeForce RTX 2060 GPU with 6GB of VRAM, 16GB of RAM and a 1TB SSD. ... But that's the 17-inch version, which drops you down to a GTX 1660 Ti GPU and a 512GB PCIe SSD comboed with a 1TB HDD.",Asus,L,productimg/Asus_ROG_Strix_Scar_III.jpg
+25,Razer Blade Pro 17,175000.0,160000.0,The 10th gen Intel ® Core™ i7-10875H processor pushes the limits even further. With a base clock speed of 2.3 GHz and 5.1 GHz with Intel Turbo Boost.,Razer,L,productimg/Razer_Blade_Pro_17.jfif
+26,VAIO Z,175000.0,170000.0,"Windows 10 Pro
+Intel Core i5 11th Generation Processor
+Intel Iris Xe Graphics
+16GB Memory
+512GB PCIe SSD
+14"" FHD (1920 x 1080) Non-touchscreen
+Windows Hello Face Sign-in
+Up to 13.5 hr of Battery Life
+Black",Sony,L,productimg/Vaio_Z.jpg
+27,HP Spectre x360,190000.0,180000.0,HP Spectre X360 is a Windows 10 Professional laptop with a 13.30-inch display that has a resolution of 1920x1080 pixels. It is powered by a Core i7 processor and it comes with 8GB of RAM. The HP Spectre X360 packs 256GB of SSD storage. Graphics are powered by Intel Integrated UHD Graphics 620.,HP,L,productimg/HPS_SPECTRE_X360_14.jpg
+28,Men Round Casio Watches,6000.0,5500.0,"Dial Shape: Round
+Gender: Men
+Category : Formal Watches
+Usage/Application: Daily
+ Display Type: Analog",Casio,W,productimg/casio.jpg
+29,TOMMY HILFIGER HORLOGE,11000.0,10200.0,"Here you can buy the best Tommy Hilfiger watches, like this Tommy Hilfiger horloge TH1782301.
+
+This watch has a quartz timepiece. The clock face is white and covered withmineral glass. The strap is made of stainless steel.",TommyHilfiger,W,productimg/Tommy_Hilfiger.jpg
+30,Blancpain  Fifty Fathoms Flyback Chronograph,100000.0,96000.0,"This highly complicated dive watch combines Blancpain's most iconic watch, the Fifty Fathoms, with its best known complication, the complete calendar with moon-phase display. And that's not even mentioning the added value of the flyback chronograph.",Blancpain,W,productimg/BLANCPAIN.jpg
+31,Quartz Ultra thin Fashion Male Wristwatch,2500.0,1800.0,"Item specifics
+
+Item Type:Quartz Wristwatches
+Movement:QUARTZ
+Case Material:ALLOY
+Water Resistance Depth:3Bar
+Feature:Water Resistant",Quartz,W,productimg/Quartz.jpg
+32,Moonphase Automatic Chronograph 42 mm Men's Watch,75000.0,70000.0,"Stainless steel case with a brown (alligator) leather strap. Fixed stainless steel bezel. Silver dial with blued steel hands and Arabic numeral hour markers. Minute markers around the outer rim. Date scale around an inner ring. Dial Type: Analog. Day of the week and month appear below the 12 o'clock position. Chronograph - three sub-dials displaying: 30 minutes, dual 12 hours / moonphase and a dual 24 hour / 60 seconds. ETA-Valjoux caliber 7751 automatic movement, based upon ETA 7750, containing 25 Jewels, bitting at 28800 vph, and has a power reserve of approximately 44 hours. Scratch resistant sapphire crystal. Pull / push crown. Skeleton case back. Round case shape. Case size: 42 mm. Case thickness: 14.5 mm. Band width: 20 mm. Deployment clasp. Water resistant at 30 meters / 100 feet. Functions: chronograph, month, date, day, hour, minute, second, moonphase,. Casual watch style. Watch label: Swiss Made. Item Variations: L27734783, L2 773 4 78 3, L2-773-4-78-3. Longines Master Collection Moonphase Automatic Chronograph 42 mm Men's Watch.",Longines,W,productimg/Longines.jpg
+33,Citizen Silhouette Crystal Silver Dial Ladies Watch,17000.0,16000.0,"Band Materia: lRose Gold Plated, Metal, Stainless Steel
+Model: Citizen Eco-Drive
+Lug Width:16 mm
+Style: Dress/Formal, Casual, Luxury
+Case Finish: Polished
+Dial Color: Silver, Rose Gold
+Watch Shape: Round
+Display :Analog
+Case Thickness: 10 mm
+Case Material: Stainless Steel, Rose Gold, Crystal.",Citizen,W,productimg/Citizen.jpg
