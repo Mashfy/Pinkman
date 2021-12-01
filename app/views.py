@@ -135,7 +135,7 @@ def mobile(request,data=None):
     totalitem=0
     if data==None:
         mobiles=Product.objects.filter(category='M')
-    elif data=='Apple' or data=='Samsung' or data=='Asus':
+    elif data=='Apple' or data=='Samsung' or data=='Oppo':
         mobiles=Product.objects.filter(category='M').filter(brand=data)
     elif data=='below':
         mobiles=Product.objects.filter(category='M').filter(discounted_price__lt=80000)
@@ -149,12 +149,12 @@ def laptop(request,data=None):
     totalitem=0
     if data==None:
         laptops=Product.objects.filter(category='L')
-    elif data=='Asus' or data=='Razer'or data=='Apple':
+    elif data=='Asus' or data=='HP'or data=='Apple':
         laptops=Product.objects.filter(category='L').filter(brand=data)
     elif data=='below':
-        laptops=Product.objects.filter(category='L').filter(discounted_price__lt=170000)
+        laptops=Product.objects.filter(category='L').filter(discounted_price__lt=110000)
     elif data=='above':
-        laptops=Product.objects.filter(category='L').filter(discounted_price__gt=170000)
+        laptops=Product.objects.filter(category='L').filter(discounted_price__gt=110000)
     if request.user.is_authenticated:
         totalitem=len(Cart.objects.filter(user=request.user))
     return render(request, 'app/laptop.html',{'laptops':laptops,'totalitem':totalitem})
@@ -196,9 +196,9 @@ def watch(request,data=None):
     elif data=='Quartz' or data=='Blancpain':
         watches=Product.objects.filter(category='W').filter(brand=data)
     elif data=='below':
-        watches=Product.objects.filter(category='W').filter(discounted_price__lt=2000)
+        watches=Product.objects.filter(category='W').filter(discounted_price__lt=10000)
     elif data=='above':
-        watches=Product.objects.filter(category='W').filter(discounted_price__gt=2000)
+        watches=Product.objects.filter(category='W').filter(discounted_price__gt=10000)
     if request.user.is_authenticated:
         totalitem=len(Cart.objects.filter(user=request.user))
     return render(request, 'app/watch.html',{'watches':watches,'totalitem':totalitem})
