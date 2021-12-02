@@ -8,6 +8,7 @@ from django.db.models import Q, query
 from django.http import JsonResponse
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
+import time
 
 class ProductView(View):
     def get(self,request):
@@ -216,9 +217,10 @@ class CustomerRegistrationView(View):
     def post(self,request):
         form=CustomerRegistrationForm(request.POST)
         if form.is_valid():
-            messages.success(request,'Congratulations!! Registered Successfully')
+            messages.success(request,'Congratulations!! Registered Successfully, please login now.')
             form.save()
         return render(request, 'app/customerregistration.html',{'form':form})
+
 
 @login_required
 def checkout(request):
@@ -230,17 +232,17 @@ def checkout(request):
     totalamount=0.0
     cart_product=[p for p in Cart.objects.all() if p.user==request.user]
     add=Customer.objects.filter(user=request.user)
-    if add.exists():
-        if cart_product:
-            for p in cart_product:
-                tempamount=(p.quantity*p.product.discounted_price)
-                amount+=tempamount
-        totalamount=amount+shipping_amount
-        totalitem=len(Cart.objects.filter(user=request.user))
-        return render(request, 'app/checkout.html',{'add':add,'totalamount':totalamount,'cart_items':cart_items,'totalitem':totalitem})
-    else:
-        totalitem=len(Cart.objects.filter(user=request.user))
-        return render(request, 'app/emptyaddress.html',{'add':add,'active':'btn-primary','totalitem':totalitem})
+    # if add.exists():
+    if cart_product:
+        for p in cart_product:
+            tempamount=(p.quantity*p.product.discounted_price)
+            amount+=tempamount
+    totalamount=amount+shipping_amount
+    totalitem=len(Cart.objects.filter(user=request.user))
+    return render(request, 'app/checkout.html',{'add':add,'totalamount':totalamount,'cart_items':cart_items,'totalitem':totalitem})
+    # else:
+    #     totalitem=len(Cart.objects.filter(user=request.user))
+    #     return render(request, 'app/emptyaddress.html',{'add':add,'active':'btn-primary','totalitem':totalitem})
 
 
 
@@ -307,4 +309,7 @@ class ProfileViewadd(View):
 def search(request):
     query=request.GET['query']
     allproducts=Product.objects.filter(title__icontains=query)
-    return render(request, 'app/search.html',{'allproducts':allproducts})
+    if allproducts:
+        return render(request, 'app/search.html',{'allproducts':allproducts})
+    else:
+        return render(request, 'app/emptysearch.html')

@@ -20,7 +20,7 @@ urlpatterns = [
 
     #path('buy/', views.buy_now, name='buy-now'),
     path('profile/', views.ProfileView.as_view(), name='profile'),
-    # path('address/', views.ProfileViewadd.as_view(), name='addressadd'),
+    path('addaddress/', views.ProfileViewadd.as_view(), name='profileadd'),
     path('address/', views.address, name='address'),
     path('orders/', views.orders, name='orders'),
     
