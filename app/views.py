@@ -169,7 +169,7 @@ def topwear(request,data=None):
     totalitem=0
     if data==None:
         topwears=Product.objects.filter(category='TW')
-    elif data=='JamesPerse' or data=='Carhartt':
+    elif data=='JamesPerse' or data=='Calvinklein':
         topwears=Product.objects.filter(category='TW').filter(brand=data)
     elif data=='below':
         topwears=Product.objects.filter(category='TW').filter(discounted_price__lt=3000)
@@ -184,12 +184,12 @@ def bottomwear(request,data=None):
     totalitem=0
     if data==None:
         bottomwears=Product.objects.filter(category='BW')
-    elif data=='Gucci' or data=='Everlane':
+    elif data=='Armani' or data=='Levis':
         bottomwears=Product.objects.filter(category='BW').filter(brand=data)
     elif data=='below':
-        bottomwears=Product.objects.filter(category='BW').filter(discounted_price__lt=2000)
+        bottomwears=Product.objects.filter(category='BW').filter(discounted_price__lt=6000)
     elif data=='above':
-        bottomwears=Product.objects.filter(category='BW').filter(discounted_price__gt=2000)
+        bottomwears=Product.objects.filter(category='BW').filter(discounted_price__gt=6000)
     if request.user.is_authenticated:
         totalitem=len(Cart.objects.filter(user=request.user))
     return render(request, 'app/bottomwear.html',{'bottomwears':bottomwears,'totalitem':totalitem})

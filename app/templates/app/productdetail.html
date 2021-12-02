@@ -8,9 +8,13 @@
             <img src="{{product.product_image.url}}" alt="" class="img-fluid img-thumbnail">
         </div>
         <div class="col-sm-5 offset-sm-1">
-            <h3>Product Title: {{product.title}}</h3>
+            <h4>Product Title: </h4>
+            <br>
+            <h3><b>{{product.title}}</b></h3>
             <hr>
             <p><span>{{product.description}}</span></p>
+            <br>
+            <h5>Brand: <b>{{product.brand}}</b></h5>
             <br>
             <h4>Tk. {{product.discounted_price}} <small class="fw-light text-decoration-line-through">Tk.
                     {{product.selling_price}}</small></h4> <br>
@@ -24,7 +28,7 @@
             </form>
             <form action="/add-to-cart" class="d-inline">
                 <input type="hidden" name="prod_id" value="{{product.id}}" id="prod_id">
-                <button type="submit" class="btn btn-danger shadow px-5 py-2 ms-4">Buy Now</button>
+                <button type="submit" class="btn btn btn-success shadow px-5 py-2 ms-4">Buy Now</button>
             </form>
             {% endif %}
             {% endif %}
