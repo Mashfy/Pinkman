@@ -121,8 +121,13 @@ def remove_cart(request):
 @login_required
 def address(request):
     add=Customer.objects.filter(user=request.user)
-    totalitem=len(Cart.objects.filter(user=request.user))
-    return render(request, 'app/address.html',{'add':add,'active':'btn-primary','totalitem':totalitem})
+    if add.exists():
+        totalitem=len(Cart.objects.filter(user=request.user))
+        return render(request, 'app/address.html',{'add':add,'active':'btn-primary','totalitem':totalitem})
+    else:
+        totalitem=len(Cart.objects.filter(user=request.user))
+        return render(request, 'app/emptyaddress.html',{'add':add,'active':'btn-primary','totalitem':totalitem})
+
 
 @login_required
 def orders(request):
@@ -224,13 +229,19 @@ def checkout(request):
     shipping_amount=70.0
     totalamount=0.0
     cart_product=[p for p in Cart.objects.all() if p.user==request.user]
-    if cart_product:
-        for p in cart_product:
-            tempamount=(p.quantity*p.product.discounted_price)
-            amount+=tempamount
+    add=Customer.objects.filter(user=request.user)
+    if add.exists():
+        if cart_product:
+            for p in cart_product:
+                tempamount=(p.quantity*p.product.discounted_price)
+                amount+=tempamount
         totalamount=amount+shipping_amount
-    totalitem=len(Cart.objects.filter(user=request.user))
-    return render(request, 'app/checkout.html',{'add':add,'totalamount':totalamount,'cart_items':cart_items,'totalitem':totalitem})
+        totalitem=len(Cart.objects.filter(user=request.user))
+        return render(request, 'app/checkout.html',{'add':add,'totalamount':totalamount,'cart_items':cart_items,'totalitem':totalitem})
+    else:
+        totalitem=len(Cart.objects.filter(user=request.user))
+        return render(request, 'app/emptyaddress.html',{'add':add,'active':'btn-primary','totalitem':totalitem})
+
 
 
 @login_required
