@@ -74,7 +74,7 @@ class Customer(models.Model):
     address=models.CharField(max_length=200) #address
     area=models.CharField(max_length=100) #area
     mobno=models.IntegerField() #mobno
-    district=models.CharField(choices=DISTRICT_CHOICES,max_length=50) #area
+    district=models.CharField(choices=DISTRICT_CHOICES,max_length=50)
     
     def __str__(self):
         return str(self.id)
